@@ -1,8 +1,12 @@
 {
-  "name": "mynodejs",
-  "description": "awesome nodejs app",
+  "name": "test",
   "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+   
   "scripts": {
-     "start‍" : "node app.js"
-  }
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC"
 }
