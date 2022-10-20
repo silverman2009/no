@@ -4,9 +4,13 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "wstunnel -s 0.0.0.0:8080"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  
+  "dependencies": {
+    "wstunnel" : "*"
+  }
 }
