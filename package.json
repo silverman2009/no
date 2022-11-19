@@ -8,9 +8,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  
-  "dependencies": {
-    "wstunnel" : "*"
-  }
+  "license": "ISC"
 }
