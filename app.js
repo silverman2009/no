@@ -4,7 +4,7 @@ var http = require('http') ;
 var httpProxy = require('http-proxy');
 
 var proxy = httpProxy.createProxyServer({
-		target:'https://dzone.com/',
+		target:'http://37.32.7.73:3001/',
 		secure : false, 
 		xfwd : true
 	}).listen(port);
