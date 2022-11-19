@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "wstunnel -s 0.0.0.0:8080"
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
