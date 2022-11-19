@@ -1,7 +1,19 @@
-var http = require('http');
 const port = process.env.PORT || 3001;
-//create a server object:
-http.createServer(function (req, res) {
-  res.write('Hello World!'); //write a response to the client
-  res.end(); //end the response
-}).listen(port); //the server object listens on port 8080
+ 
+var http = require('http') ;
+var httpProxy = require('http-proxy');
+
+var proxy = httpProxy.createProxyServer({
+		target:'https://dzone.com/',
+		secure : false, 
+		xfwd : true
+	}).listen(port);
+
+proxy.on('error', function (err, req, res) {
+	res.writeHead(500, {
+		'Content-Type': 'text/plain'
+	});
+ 
+	res.end(err.toString());
+	console.log(err)
+});
