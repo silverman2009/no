@@ -4,7 +4,7 @@ var http = require('http') ;
 var httpProxy = require('http-proxy');
 
 var proxy = httpProxy.createProxyServer({
-		target:'http://37.32.7.73:3001/',
+		target:'http://37.32.5.119:3000/',
 		secure : false, 
 		xfwd : true
 	}).listen(port);
